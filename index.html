@@ -37,6 +37,7 @@
         transform: translate(-50%, -50%);
             
         background-color: rgba(255, 255, 255, 0.8);
+        border: 5px solid white;
         /* display: none; */
     }
     .typed {
@@ -46,12 +47,14 @@
         align-content: center;
         text-align: center;
         margin: 0 auto;
-        padding: 20px;
+        /* padding: 20px; */
         display: inline-block;
         opacity: 1;
         visibility: visible;
-        color:rgb(67, 67, 67);
+        color:rgb(101, 101, 101);
+        /* background-color: red; */
         line-height: 200%;
+        width: 70%;
         height: 50%;
         position: absolute;
         top: 50%;
@@ -64,20 +67,21 @@
         font-weight: 500;
         align-content: center;
         text-align: center;
-        background-color: rgb(255, 217, 240);
+        background-color: white;
         padding: 0px 20px;
-        border-radius: 20px;
+        border-radius: 50px;
         color: white;
-        /* border: 5px solid white; */
+        border: 5px solid white;
         display: inline-block;
-        color:rgb(67, 67, 67);
+        color:rgb(101, 101, 101);
         line-height: 200%;
         position: relative;
         top: 60%;
+        text-decoration: none;
     }
     a:hover {
-        background-color: rgb(255, 190, 229);
-    }</style><body onload="start()"><div class="intro-container" id="intro"><p class="typed" id="typed"></p><br><a href="sms:+16092857109" onclick="closeWindow()">rsvp</a></div><script src="/love-moon/main.e61920beb64acb8d42fe.js"></script></body><script>function start() {
+        background-color: rgb(255, 217, 240);
+    }</style><body onload="start()"><div class="intro-container" id="intro"><p class="typed" id="typed"></p><br><a href="sms:+16092857109" onclick="closeWindow()">rsvp</a></div><script src="/love-moon/main.076b1abb31816c255df0.js"></script></body><script>function start() {
       setTimeout(type, 1000);
     }
 
@@ -89,12 +93,12 @@
     function type() {
       messages = [
         "...",
-        "if u r seeing this",
+        "...",
         "u r invited to the love moon party",
         "@ 10 bank",
         "on thu, feb 17",
         "@ 8:30 pm",
-        "rsvp by sending us ur name & phone # :"
+        "rsvp by sending us ur name n phone # :"
     ];
 
     var typed = new Typed('.typed', {
