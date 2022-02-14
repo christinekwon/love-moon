@@ -30,19 +30,6 @@ class Moon extends Group {
 
         this.name = 'Moon';
 
-        // let envMap = new CubeTextureLoader()
-        // .load( [
-        //     POSX, NEGX,
-        //     POSY, NEGY,
-        //     POSZ, NEGZ
-		// ] );
-        // let envMap = new CubeTextureLoader()
-        // .load( [
-        //     CLOUDS, CLOUDS,
-        //     CLOUDS, CLOUDS,
-        //     CLOUDS, CLOUDS
-		// ] );
-
         var material = new MeshStandardMaterial( {
 			color: 0xffffff,
             emissive: 0x666666,
@@ -52,30 +39,10 @@ class Moon extends Group {
 			envMapIntensity: 1
 		} );
 
-        // var material = new MeshPhongMaterial({
-		// 	color: 0xff00f3,
-		// 	specular: 0xffffff,
-		// 	shininess: 100
-		// });
-
         loader.load(MOON, obj => {
             obj.position.set(0, 0, 0);
             obj.rotation.set(0,0,0);
-			// obj.position.set(0, -1.5, 0);
-			// obj.rotation.set(0, -Math.PI, 0);
 			obj.scale.multiplyScalar(2.0);
-			// let textureloader = new THREE.TextureLoader();
-			// textureloader.load(BUTTERFLY,function(tx){
-			// 	tx.offset.set(-0.3, 0.5);
-			// 	tx.repeat.set(1.5, 1.5);
-			// 	let stripeMaterial = new THREE.MeshPhongMaterial({
-			// 		map: tx,
-			// 		wireframe: false,
-			// 		specular: 0xffffff,
-			// 		shininess: 1000,
-			// 	});
-			// 	obj.children[0].material = stripeMaterial;
-			// });
             obj.children[0].material = material;
             obj.matrixAutoUpdate = false;
             obj.updateMatrix();
@@ -86,9 +53,6 @@ class Moon extends Group {
         // Add self to parent's update list
         parent.addToUpdateList(this);
 
-        // Populate GUI
-        // this.state.gui.add(this.state, 'bob');
-        // this.state.gui.add(this.state, 'spin');
     }
 
     spin() {

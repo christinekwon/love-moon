@@ -66,9 +66,6 @@ class MainScene extends Scene {
         // Set background to a nice color
         this.background = new Color(0xffd9f0);
 
-        // var bg = new TextureLoader().load(CLOUDS);
-        // this.background = bg;
-
         var metalMap = new CubeTextureLoader()
         .load( [
             POSX, NEGX,
@@ -145,26 +142,8 @@ class MainScene extends Scene {
             this.background = color;
             console.log(color);
         }
-        // console.log(this.state.count);
-        // this.background = color;
 
-        // }
-        // else {
-        //     this.background = new Color(
-        //         this.colors[this.state.color][0] + ((this.colors[0][0] - this.colors[this.state.color][0]) / 100.0),
-        //         this.colors[this.state.color][1] + ((this.colors[0][1] - this.colors[this.state.color][1]) / 100.0),
-        //         this.colors[this.state.color][2] + ((this.colors[0][2] - this.colors[this.state.color][2]) / 100.0)
-        //     );
-        // }
-        
         this.state.count++;
-
-        // if (this.state.count == 600) {
-        //     console.log('600');
-        //     this.state.count = 0;
-        //     this.state.color = 0;
-        // }
-
     }
 
     
