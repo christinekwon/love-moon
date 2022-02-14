@@ -1,1 +1,108 @@
-<!doctype html><html><head><meta charset="utf-8"><title>love moon</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/love-moon/favicon.png"></head><body><script src="/love-moon/main.bad2e8dfb760ab86b1e8.js"></script></body></html>
+<!doctype html><html><head><meta charset="utf-8"/><title>love moon</title><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"/><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="icon" href="/love-moon/favicon.png"></head><style>@font-face {
+    font-family: 'Hershey';
+    src: url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Bold/Hershey-Noailles-Futura-Duplex-Bold.eot'); /* IE9 Compat Modes */
+    src:
+        url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Bold/Hershey-Noailles-Futura-Duplex-Bold.woff') format('woff'), /* Modern Browsers */
+        url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Bold/Hershey-Noailles-Futura-Duplex-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('http://hershey-noailles.luuse.io/output/Hershey-Noailles-Futura-Duplex-Bold/Hershey-Noailles-Futura-Duplex-Bold.svg') format('svg'); /* Legacy iOS */
+  }
+
+    /* Tooltip text */
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: white;
+      color: rgb(118, 118, 118);
+      text-align: center;
+      padding: 20px;
+      border-radius: 6px;
+      left: 50px;
+      top: 0px;
+      font-size: 12px;
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+    }
+
+
+    .intro-container {
+        text-align: center;
+        align-content: center;
+        position: absolute;
+        margin: 0 auto;
+        width: 40vw;
+        height: 30vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            
+        background-color: rgba(255, 255, 255, 0.8);
+        /* display: none; */
+    }
+    .typed {
+        font-family: Hershey;
+        font-size: 20px;
+        font-weight: 500;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        display: inline-block;
+        opacity: 1;
+        visibility: visible;
+        color:rgb(67, 67, 67);
+        line-height: 200%;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    a {
+        font-family: Hershey;
+        font-size: 20px;
+        font-weight: 500;
+        align-content: center;
+        text-align: center;
+        background-color: rgb(255, 217, 240);
+        padding: 0px 20px;
+        border-radius: 20px;
+        color: white;
+        /* border: 5px solid white; */
+        display: inline-block;
+        color:rgb(67, 67, 67);
+        line-height: 200%;
+        position: relative;
+        top: 60%;
+    }
+    a:hover {
+        background-color: rgb(255, 190, 229);
+    }</style><body onload="start()"><div class="intro-container" id="intro"><p class="typed" id="typed"></p><br><a href="sms:+16092857109" onclick="closeWindow()">rsvp</a></div><script src="/love-moon/main.e61920beb64acb8d42fe.js"></script></body><script>function start() {
+      setTimeout(type, 1000);
+    }
+
+    function closeWindow() {
+      console.log("closing");
+      document.getElementById("intro").style.display = "none";
+    }
+
+    function type() {
+      messages = [
+        "...",
+        "if u r seeing this",
+        "u r invited to the love moon party",
+        "@ 10 bank",
+        "on thu, feb 17",
+        "@ 8:30 pm",
+        "rsvp by sending us ur name & phone # :"
+    ];
+
+    var typed = new Typed('.typed', {
+        strings: messages,
+        // 25 is good
+        typeSpeed: 100,
+        showCursor: false,
+        cursorChar: '|',
+        autoInsertCss: true,
+    });
+}</script></html>
